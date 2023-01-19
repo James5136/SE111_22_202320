@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN-DOCUMENT STYLING-->
+    <style>
+        /*in here we write in CSS*/
+        /*SELECTING in CSS & Javascript: select specific element(s) on a page
+            *by element type    EX: body, div, p
+            *by ID attribute    EX: #wrapper, #nav, #footer
+            *by Class attibute  EX: coming in week 3 :]
+
+        */
+
+        div { /*applies to ALL divs in the page*/
+            border:1px solid black;
+            padding:10px; /*adds 10px of space to all 4 sides inbetween content & border*/
+            margin:5px;/*adds 5px of space between elements (space added outside of border)*/
+        }
+
+        #nav, #footer{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body style="background-color:gray;">
+
+    <div id="wrapper"> <!--this is the wrapper, and it wraps around all content-->
+
+        <!--Header-->
+        <h1>James Keyes</h1>
+
+        <!--Nav-->
+        <div id="nav">
+            
+            <!--External Links: a link outside your website-->
+            <a href="http://www.meca.edu" target="_blank">Visit IKEA</a>
+
+            <!--Internal Link: a link to a page inside your website/root folder-->
+            <!--Relative Path-->
+            <a href="page2.html">Page 2</a>
+
+            <!--In PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="#bio">Bio</a>
+            <a href="#schools">Schools</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#footer">Bottem of page</a>
+
+
+        </div><!--End Nav-->
+
+        <!--Bio-->
+        <div id="bio">
+            
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he's afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+            <!--Remote image links (Absoulute paths) BOOOO!! BAD!!-->
+            <img src="https://informaticsnurse.com/wp-content/uploads/2021/08/Hello-World-Header.png" alt="Hello World!" style="width: 500px" title="HI!">
+
+            <!--Relative image link (Relative path) resource must be stored in the root folder-->
+            <img src="images/stormsEnd.jpg" alt="Storm's End castle in spring time" style="width: 655px">
+
+        </div><!--End Bio-->
+
+        <hr>
+
+        <!--Schools-->
+        <div id="schools">
+            <h2>Schools</h2>
+
+            <ol>
+                <li>New England Insitute of Technology</li>
+                <li>Tollgate Highschool</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA Porteous Building at duck" style="width:500px">
+
+        </div><!--End Schools-->
+
+        <hr>
+
+        <!--Hobbies-->
+        <div id="hobbies">
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Chess</li>
+                <li>Swimming</li>
+                <li>Sleep</li>
+                <li>Not dying of no sleep</li>
+            </ul>
+
+        </div><!--End Hobbies-->
+
+        <!--Footer-->
+        <div id="footer">
+            
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; J Keyes | SE111 | Winter 2023</p>
+            <br>
+            <!--Validation Screenshot-->
+            <img src="images/IndexValidation.png" alt="Validation of page" style="width:100%">
+
+        </div><!--End Footer-->
+
+    </div>
+
+</body>
+</html>
