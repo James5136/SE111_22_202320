@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Keyes">
+    <meta name="description" content="Week 6 | JavaScript Pay Calculator">
+
+    <title>JavaScript Pay Calculator</title>
+</head>
+<body>
+    <script>
+    /*
+    rate = float(14.50)
+    tax = float(0.2)
+    hours = float(32)
+    gross = rate * hours * 2
+    tax_Amnt = gross * tax
+    net = gross - tax_Amnt
+
+    limited_tax_amnt = round(tax_Amnt, 2)
+
+    print("Gross Amount:", gross,"Tax Amount:", limited_tax_amnt,"Net Amount", net)
+    */
+    
+    var rate = Number(prompt(`What is Your hourly rate: `))
+    var tax = 0.2
+    var hours = Number(prompt(`What is Your hours: `))
+
+    var gross = rate * hours * 2
+    var tax_Amount = gross * tax
+    var net = gross - tax_Amount
+
+    console.log(`Your Gross is: $${gross.toFixed(2)}`)
+    console.log(`Your Tax Amount is: $${tax_Amount.toFixed(2)}`)
+    console.log(`Your Net is: $${net.toFixed(2)}`)
+
+    alert(`Your Gross is: $${gross.toFixed(2)} \nYour Tax Amount is: $${tax_Amount.toFixed(2)} \nYour Net is: $${net.toFixed(2)}`)
+    </script>
+</body>
+</html>
