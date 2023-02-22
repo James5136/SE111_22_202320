@@ -11,19 +11,6 @@
 </head>
 <body>
     <script>
-    /*
-    rate = float(14.50)
-    tax = float(0.2)
-    hours = float(32)
-    gross = rate * hours * 2
-    tax_Amnt = gross * tax
-    net = gross - tax_Amnt
-
-    limited_tax_amnt = round(tax_Amnt, 2)
-
-    print("Gross Amount:", gross,"Tax Amount:", limited_tax_amnt,"Net Amount", net)
-    */
-    
     var rate = Number(prompt(`What is Your hourly rate: `))
     var tax = 0.2
     var hours = Number(prompt(`What is Your hours: `))
@@ -32,11 +19,11 @@
     var tax_Amount = gross * tax
     var net = gross - tax_Amount
 
-    console.log(`Your Gross is: $${gross.toFixed(2)}`)
+    console.log(`Your Gross is Amount: $${gross.toFixed(2)}`)
     console.log(`Your Tax Amount is: $${tax_Amount.toFixed(2)}`)
-    console.log(`Your Net is: $${net.toFixed(2)}`)
+    console.log(`Your Net Amount is: $${net.toFixed(2)}`)
 
-    alert(`Your Gross is: $${gross.toFixed(2)} \nYour Tax Amount is: $${tax_Amount.toFixed(2)} \nYour Net is: $${net.toFixed(2)}`)
+    alert(`Your Gross Amount is: $${gross.toFixed(2)} \nYour Tax Amount is: $${tax_Amount.toFixed(2)} \nYour Net Amount is: $${net.toFixed(2)}`)
     </script>
 </body>
 </html>
