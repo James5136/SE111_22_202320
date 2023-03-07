@@ -39,12 +39,10 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		var fname = document.querySelector(`#first`).value
-		var lname = document.querySelector(`#last`).value
+		var fname = document.querySelector(`#first`)
+		var lname = document.querySelector(`#last`)
 		var button = document.querySelector(`#button`)
 
-		console.log(fname)
-		console.log(lname)
 		//Make an array to store the people
 		var people = [
 
@@ -76,11 +74,10 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-
+				first: `${fname.value}`,
+            	last: `${lname.value}`
             }//end of person object
-
-
-
+			
 
 			//Add the person object into the people array by using the .push() array method.
 			people.push(person)
@@ -106,7 +103,7 @@
 			var output = ``
 
 			//Loop through the objects in the people array
-			/*for()
+			for(let i = 0; i < people.length; i++)
             {
 
 				//Loop through each property in the object
@@ -116,20 +113,20 @@
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-				
-
-                }
+					
+					output +=`<p><b>${key.toUpperCase()}:</b> ${people[i][key]}</p>`
+				}
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+				output +=`<hr>`
 
 
 			}//end of loop going through people array to edit 'output'
-
+			
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
 				document.querySelector(`#output`).innerHTML = output
-				*/
+	
 
 		}
 
